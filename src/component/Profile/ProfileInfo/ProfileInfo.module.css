@@ -1,0 +1,13 @@
+
+.content img{
+    width: 950px;
+    height: 160px;
+}
+.content {
+    grid-area: c;
+    background-color:darkgrey;
+    
+}
+.profileInfo{
+    padding: 10px;
+}
