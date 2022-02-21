@@ -1,7 +1,21 @@
 import React from "react";
 import v from "./ProfileInfo.module.css";
+import { addpostActionCreator } from "../../../Redux/State.js";
+import { updateNewPostTextactionCreator } from "../../../Redux/State.js";
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+  console.log(props);
+  let newPostElement = React.createRef();
+  let addpost = () => {
+    let text = newPostElement.current.value;
+    props.dispatch(addpostActionCreator());
+  };
+
+  let onPostChange = () => {
+    let text = newPostElement.current.value;
+    props.dispatch(updateNewPostTextactionCreator(text));
+  };
+
   return (
     <div>
       <div>
@@ -16,10 +30,14 @@ const ProfileInfo = () => {
         </div>
         <div className={v.profileInfo}>
           <div>
-            <textarea> Первый НАХ!!!</textarea>
+            <textarea
+              onChange={onPostChange}
+              ref={newPostElement}
+              value={props.newPostText}
+            />
           </div>
           <div>
-            <button>Add Post</button>
+            <button onClick={addpost}>Add Post</button>
             <button>Remove</button>
           </div>
         </div>

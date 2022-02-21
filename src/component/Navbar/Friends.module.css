@@ -1,0 +1,21 @@
+.grid{
+    color:aquamarine;
+    display:flex;
+}
+
+.img{
+    width:40px;
+    
+}
+
+.imn{
+    width:40px;
+}
+
+.ims{
+    width:40px;
+}
+ 
+.flex{
+    margin:05px;
+}

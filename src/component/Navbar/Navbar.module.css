@@ -12,3 +12,24 @@
     color:gold;
     text-decoration: none;  
 }
+
+
+.photo{
+    width: 30%;
+    border: 2px solid rgb(0, 0, 0, .5);
+    border-radius: 15%;
+    overflow: hidden;
+}
+
+  .color{
+      color:deepskyblue;
+  }
+
+  .friends{
+      margin-top: 12px;
+  }
+
+
+  .friend{
+margin-top: 8px;
+  }

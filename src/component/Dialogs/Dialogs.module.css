@@ -3,17 +3,34 @@
     background-color:darkgrey;
 }
 .dialogs{
-display: grid;
-grid-template-columns: 2fr 10fr;
 padding: 10px;
+text-decoration: none;
 }
-/* .messages{
-padding: 10px; 
-} */
 
-/* .messagE{
-
-} */
-.dialog.active{
+.active{
     color:gold;
+    max-width: 2px;
+    text-overflow: ellipsis;
+}
+
+.image{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.flex{
+    display: flex;
+    margin-bottom: 8px;
+    justify-content: flex-start;
+}
+
+
+.marginLeft{
+    margin-left: 24px;
+}
+
+
+.max{
+    max-width: 70px;
 }
